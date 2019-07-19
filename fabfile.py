@@ -12,15 +12,6 @@ def pull():
     local("git pull origin master")
 
 
-def merge():
-    f = open(r"C:\Users\Prakash\PycharmProjects\mark3\new year.txt")
-    g = open("C:\\Users\\Prakash\\PycharmProjects\\mark3\\christmas.txt", 'a+')
-    text = f.read()
-    g.write(text)
-    f.close()
-    g.close()
-
-
 def add():
     local("git add .")
 
@@ -59,7 +50,6 @@ def move():
 def deploy():
     cd()
     pull()
-    merge()
     add()
     commit()
     push()
